@@ -1,8 +1,8 @@
 image: ${artifact.metadata.image}
 
-image: ${artifact.image}
-image: ${artifact.image.nginx}
-image: ${artifacts.primary.image}
+# image: ${artifact.image}
+# image: ${artifact.image.nginx}
+# image: ${artifacts.primary.image}
 
 # name: harness-example
 # replicas: 1
