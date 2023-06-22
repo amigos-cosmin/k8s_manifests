@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-sian
+  name: {{.Values.namespace}}
   labels:
     app: nginx
 spec:
@@ -16,7 +16,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
+      - name: {{.Values.namespace}}
         image: {{.Values.image}}
         ports:
         - containerPort: 80
